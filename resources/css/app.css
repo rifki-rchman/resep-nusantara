@@ -1,0 +1,178 @@
+/* Tailwind Base Import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🔤 Global font & body style */
+body {
+  @apply bg-gray-50 text-gray-800 antialiased leading-relaxed font-sans;
+}
+
+/* Judul-judul */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-gray-900;
+}
+
+/* Link style */
+a {
+  @apply text-purple-600 hover:text-orange-500 transition duration-150 ease-in-out;
+}
+
+/* 🎨 Tombol utama ungu-jingga */
+.btn-primary {
+  @apply inline-block bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600 text-white font-semibold py-2 px-4 rounded-lg shadow transition duration-200;
+}
+
+/* ✨ Tombol amber khusus */
+.btn-amber {
+  @apply inline-block bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-4 rounded-lg shadow transition duration-200;
+}
+
+/* Tombol sekunder */
+.btn-secondary {
+  @apply inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-1 px-3 rounded-md transition duration-200;
+}
+
+/* Tombol danger */
+.btn-danger {
+  @apply inline-block bg-red-500 hover:bg-red-600 text-white font-medium py-1 px-3 rounded-md transition duration-200;
+}
+
+/* Input field */
+.input-field {
+  @apply border border-gray-300 rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-purple-400;
+}
+
+/* Card */
+.card {
+  @apply bg-white rounded-xl shadow p-4 transition duration-300 hover:shadow-lg;
+}
+
+/* Badge */
+.badge {
+  @apply inline-block bg-purple-100 text-purple-700 text-xs font-semibold rounded-full px-2 py-1;
+}
+
+/* ✨ Animasi fade-in */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ✨ Animasi slide-in */
+.slide-in {
+  animation: slideIn 0.6s ease-out both;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Table style */
+table {
+  @apply w-full border-collapse;
+}
+
+th, td {
+  @apply text-left py-3 px-4 border-b;
+}
+
+th {
+  @apply text-gray-700 font-medium;
+}
+
+/* Checkbox dan radio */
+input[type="checkbox"], input[type="radio"] {
+  @apply h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded;
+}
+
+/* Select */
+select {
+  @apply border border-gray-300 rounded-lg py-2 px-3 w-full focus:outline-none focus:ring-2 focus:ring-purple-400;
+}
+
+/* Alerts */
+.alert {
+  @apply rounded-lg p-4 mb-4;
+}
+
+.alert-success {
+  @apply bg-green-100 text-green-800;
+}
+
+.alert-error {
+  @apply bg-red-100 text-red-800;
+}
+
+/* Username Display */
+.username-display {
+  @apply text-xl font-semibold text-purple-700;
+}
+
+/* Tambahan latar belakang gradasi untuk halaman utama */
+.bg-hero {
+  @apply bg-gradient-to-br from-white via-orange-50 to-purple-50;
+}
+
+/* Heading di hero section */
+.hero-title {
+  @apply text-4xl md:text-5xl font-extrabold text-purple-700 tracking-tight;
+}
+
+.hero-subtitle {
+  @apply text-lg text-gray-700;
+}
+
+/* Tombol Login & Daftar di Navbar */
+.nav-auth-link {
+  @apply hover:bg-white hover:text-purple-700 px-3 py-1 rounded-md transition font-medium bg-white bg-opacity-10;
+}
+
+/* Search input styling */
+.search-input {
+  @apply w-full px-5 py-3 rounded-xl border border-gray-300 shadow-sm focus:ring-2 focus:ring-purple-500 focus:outline-none transition;
+}
+
+/* Card kategori di beranda */
+.category-card {
+  @apply bg-white shadow-md rounded-xl text-center p-6 hover:shadow-lg transition;
+}
+
+.category-icon {
+  @apply w-12 h-12 mx-auto rounded-full bg-purple-100 flex items-center justify-center mb-3 text-purple-700;
+}
+
+.resep-card {
+  @apply bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition;
+}
+
+.resep-title {
+  @apply text-lg font-semibold text-black mb-1 truncate;
+}
+
+.resep-desc {
+  @apply text-sm text-gray-600 mb-2 line-clamp-2;
+}
+
+.resep-kategori {
+  @apply text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full;
+}
+
+.resep-link {
+  @apply text-sm text-orange-600 hover:underline font-medium;
+}
+/* Header Logo */
+.nav-logo {
+  @apply text-white text-lg font-bold tracking-wide;
+}
+
+/* Tombol Login & Daftar Outline Style */
+.nav-outline-btn {
+  @apply border border-white text-white font-medium px-4 py-1.5 rounded-md transition hover:bg-white hover:text-purple-700;
+}
+
