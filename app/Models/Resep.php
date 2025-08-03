@@ -18,7 +18,6 @@ class Resep extends Model
     'langkah',
     'gambar',
     'durasi',
-    'user_id',
     'porsi'
 ];
 
